@@ -1,0 +1,220 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rightBox{
+  display: flex;
+  margin: 12px;
+}
+
+.left img{
+width: 23x;
+height: 23px;
+}
+
+.right{
+  display: flex;
+  
+}
+.search{
+  height: 20px;
+}
+
+
+.container{
+  
+  margin:auto;
+  
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.main{
+  background-color: rgb(15, 184, 170);
+}
+
+
+ul{
+  display: flex;
+}
+
+nav{
+  font-size: 12px;
+  padding-top: 14px;
+  display: flex;
+}
+
+nav ul li{
+  list-style: none;
+  padding: 0 12px;
+}
+
+.flex{
+  display:flex;
+}
+
+.items-center{
+  align-items:center;
+} 
+
+.justify-center{
+  justify-content: center;
+}
+.space-around{
+  justify-content: space-around;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.mx-2{
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+
+
+
+
+
+
+div img{
+  height: 20px;
+  width:20px;
+}
+
+
+
+.image{
+  width: 800px;
+  height: 300px;
+  
+}
+.banner{
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 600px){
+  .banner{
+    display: flex;
+    flex-direction: column;
+  }
+  .image{
+    margin:10px;
+    width: 500px;
+    height: 300px;
+
+  }
+  
+}
+
+.center{
+  height: 300px;
+  width:600px;
+
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+.carousal-middle, .carousal-top {
+  height: 444px;
+  margin: auto;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+
+.d-block{
+  width:100%;
+  display: block;
+}
+
+.carousal-middle img, .carousal-top img {
+  height: 444px;
+  width: 100%;
+  margin: auto;
+}
+.carditem img{
+  height:100px;
+  width: 300px;
+
+  
+}
+.main{
+  align-items: center;
+}
+
+.cd{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.card1{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+
+.d1{
+  height: 300px;
+  width: 300px;
+}
+
+.mk{
+  margin-right: auto;
+}
