@@ -70,7 +70,7 @@ const Home = () => {
       <div >
         <div className='cd '>
         
-        <Card className='carditem col-4 text-align-center align-items-center'>
+        <Card className='carditem col-4 text-align-center align-items-center card12'>
               <Card.Img className='carditem-photo' variant="top" src={b2} alt='Baby world' />
               <Card.Body >
                 <Card.Title>Men Section</Card.Title>
@@ -80,7 +80,7 @@ const Home = () => {
                 <button className='btn btn-outline-info' variant="info"><Link to='/men'>Buy</Link></button>
               </Card.Body>
         </Card>
-        <Card className='carditem col-4 text-align-center align-items-center'>
+        <Card className='carditem col-4 text-align-center align-items-center card12'>
               <Card.Img className='carditem-photo align-items-center' variant="top" src={b17} alt='Baby world' />
               <Card.Body>
                 <Card.Title>Women Section</Card.Title>
@@ -100,9 +100,9 @@ const Home = () => {
                 <button className='btn btn-outline-primary' variant="info"><Link to='/kids'>Buy</Link></button>
               </Card.Body>
         </Card> */}
-        <Card className='carditem col-4 text-align-center align-items-center'>
+        <Card className='carditem col-4 text-align-center align-items-center card12'>
               <Card.Img className='carditem-photo' variant="top" src={b7} alt='Baby world' />
-              <Card.Body>
+              <Card.Body className='w-100'>
                 <Card.Title>Footwear</Card.Title>
                 <Card.Text>
                   Look for more

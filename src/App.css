@@ -218,3 +218,18 @@ div img{
 .mk{
   margin-right: auto;
 }
+
+
+@media only screen and (max-width: 600px){
+  .cd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .card12{
+    width: 100%;
+  }
+}

@@ -16,6 +16,7 @@ import Women from "./components/Women";
 import Men from "./components/Men";
 import Cart from "./components/Cart";
 // import data from "./data/Mens";
+//import Product from "./components/Product"
 
 
 function App() {
