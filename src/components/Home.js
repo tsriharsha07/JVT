@@ -77,17 +77,17 @@ const Home = () => {
                 <Card.Text>
                   Look for more
                 </Card.Text>
-                <button className='btn btn-outline-info' variant="info"><Link to='/men'>Buy</Link></button>
+                <Link to='/men'><button className='btn btn-outline-primary opacity-50' variant="info">Buy</button></Link>
               </Card.Body>
         </Card>
         <Card className='carditem col-4 text-align-center align-items-center card12'>
-              <Card.Img className='carditem-photo align-items-center' variant="top" src={b17} alt='Baby world' />
+              <Card.Img className='carditem-photo align-items-center ' variant="top" src={b17} alt='Baby world' />
               <Card.Body>
                 <Card.Title>Women Section</Card.Title>
                 <Card.Text>
                   Look for more
                 </Card.Text>
-                <button className='btn btn-outline-primary' variant="info"><Link to='/women'>Buy</Link></button>
+                <Link to='/women'><button className='btn btn-outline-primary opacity-50' variant="info">Buy</button></Link>
               </Card.Body>
         </Card>
         {/* <Card className='carditem col-3 text-align-center'>
@@ -107,7 +107,7 @@ const Home = () => {
                 <Card.Text>
                   Look for more
                 </Card.Text>
-                <button className='btn btn-outline-primary' variant="info"><Link to='/beauty'>Buy</Link></button>
+                <Link to='/footwear'><button className='btn btn-outline-primary opacity-50' variant="info">Buy</button></Link>
               </Card.Body>
         </Card>
         </div>

@@ -4,11 +4,14 @@ import { Link } from 'react-router-dom'
 import '../App.css'
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { useSelector } from 'react-redux';
+import { Badge } from '@mui/material';
 
 
 
 
 const Navbar = () => {
+    const state=useSelector((state)=> state.handleCart)
   return (
     <>
     <nav className="navbar navbar-expand-lg navbar-white bg-success bg-opacity-25">
@@ -45,7 +48,7 @@ const Navbar = () => {
             <div className="mx-2 ">
                 <Link to='/login'><button className='btn btn-outline-warning m-2'>Login</button></Link>
                 <Link to='/signup'><button className='btn btn-outline-warning m-2'>SignUp</button></Link>
-                <Link to='/cart'><button className='btn btn-outline-warning m-2'><ShoppingCartIcon/></button></Link>
+                <Link to='/cart'><button className='btn btn-outline-warning m-2'><Badge><ShoppingCartIcon/>{state.length}</Badge></button></Link>
                 
             </div>
         </div>

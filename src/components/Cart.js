@@ -1,38 +1,63 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import {useSelector} from 'react-redux'
+//import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import { useDispatch } from 'react-redux';
+import { addCart, delCart } from './redux/actions';
 
-const Cart = ({cart,addToCart}) => {
+function Cart() {
+  const state=useSelector((state) => state.handleCart)
+  var total=0;
+  const dispatch = useDispatch();
+    const addProduct = (product)=>{
+        dispatch(addCart(product));
+    }
+    const delProduct = (product)=>{
+      dispatch(delCart(product));
+    }
   return (
-    <>
-      <h1 className="pt-10 text-center font-bold text-4xl">Mens Dresses</h1>
-      <section className="p-5 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 2xl:px-20 ">
-        {cart.map((item) => {
-          const { id, image, title, desc, category, type, price } = item
-          
-          return (
-            <div key={id} className="bg-gray-200  rounded-lg p-5 m-5 d-flex flex-row">
-              <Card className='carditem col-3  w-100 d-flex align-items-center '>
-              <Card.Img className='carditem-photo w-75' variant="top" src={image} alt='Baby world' />
-              <Card.Body >
-                <Card.Title>{title}</Card.Title>
-                <Card.Text>
-                  {desc}
-                  {category}
-                  {type}<hr/>
-                  Rs {price}
-                </Card.Text>
+    <div className='cart'>
+      <div className='container py-4 row justify-content-center'>
+        <h3>Total number of items : {state.length}</h3>
+        {state.map((product)=>{
+            total=(product.qty*product.price)+total;
+          return(
+            <>
+            <div className="col-md-4 mb-3" key={product.id}>
+              <div className="h-100 text-center p-4 card">
+                <div className="">
+                <img className="card-img-top img-thumbnail d1" src={product.image} height="900px"   alt="Mens pic" />
+                <div/>
+                <div className="card-body">
+                  <div className="mb-0 card-title h5">{product.title}</div>
+                  <p>{product.desc}</p>
+                  <p className="lead fw-bold card-text">{product.price}</p>
+                  
+                  
+                  <ButtonGroup aria-label="Basic example">
+                    <button className='btn btn-outline-primary' onClick={()=>delProduct(product)}>-</button>
+                    <button className='btn btn-outline-primary'>{product.qty}</button>
+                    <button className='btn btn-outline-primary' onClick={()=>addProduct(product)}>+</button>
+                  </ButtonGroup>
+                  <p className='display-6 my-4 lead card-text'>
+                    Total Price : {product.price*product.qty}₹
+                  </p>
+                      
                 
-                <FavoriteIcon className='m-2'/>
-                <button className='btn btn-outline-info' variant="info" onClick={addToCart} >Buy Now</button>
-              </Card.Body>
-        </Card>
+                </div>
+                
+              </div>
             </div>
+            </div>
+            </>
           )
-          
         })}
-      </section>
-    </>
+        <h3>Cart Price :{total} </h3>
+        <div className='container'>
+        <button className='my-3 btn btn-outline-primary opacity-10'>Order Now</button>
+        </div>
+      </div>
+    </div>
   )
 }
 

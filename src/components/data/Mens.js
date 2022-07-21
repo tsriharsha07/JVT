@@ -1,6 +1,6 @@
 const data = [
     {
-      id: 1,
+      id: 13,
       image: 'https://images.bewakoof.com/t640/unexplored-world-half-sleeve-t-shirt-518261-1657646054-1.jpg',    
        title: 'Mens dress',
       desc: 'Casual T-shirt',
@@ -9,7 +9,7 @@ const data = [
       price: 50,
     },
     {
-      id: 2,
+      id: 14,
       image: 'https://images.bewakoof.com/t640/men-s-chill-aop-shirt-362239-1655816019-1.jpg',
       title: 'Mens dress',
       desc: 'Casual Shirt',
@@ -18,7 +18,7 @@ const data = [
       price: 50,
     },
     {
-      id: 3,
+      id: 15,
       image: 'https://images.bewakoof.com/t640/men-s-grey-performance-relaxed-fit-jacket-455070-1656173691-1.jpg',
       title: 'Mens dress',
       desc: 'Sports Wear',
@@ -27,7 +27,7 @@ const data = [
       price: 50,
     },
     {
-      id: 4,
+      id: 16,
       image: 'https://images.unsplash.com/photo-1511746315387-c4a76990fdce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNDYzMjV8MHwxfHNlYXJjaHwyfHxhZGlkYXN8ZW58MHx8fHwxNjU3Nzc1NTMz&ixlib=rb-1.2.1&q=80&w=400',
       title: 'Mens dress',
       desc: 'Causal T-shirt',
@@ -36,7 +36,7 @@ const data = [
       price: 50,
     },
     {
-      id: 5,
+      id: 17,
       image: 'https://images.bewakoof.com/t640/men-s-linen-color-block-half-sleeves-shirt-362771-1656141115-1.jpg',
       title: 'Mens dress',
       desc: 'Casual shirt',
@@ -45,7 +45,7 @@ const data = [
       price: 50,
     },
     {
-      id: 6,
+      id: 18,
       image: 'https://images.bewakoof.com/t640/men-s-grey-training-slim-fit-t-shirt-455051-1655835137-1.jpg',
       title: 'Mens dress',
       desc: 'Sports Wear',
@@ -54,7 +54,7 @@ const data = [
       price: 50,
     },
     {
-      id: 7,
+      id: 19,
       image: 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNDYzMjV8MHwxfHNlYXJjaHw0fHxzaGlydHxlbnwwfHx8fDE2NTc3NzYzMjg&ixlib=rb-1.2.1&q=80',
       title: 'Mens dress',
       desc: 'Casual T-shirt',
@@ -63,7 +63,7 @@ const data = [
       price: 50,
     },
     {
-      id: 8,
+      id: 20,
       image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80',
       title: 'Mens dress',
       desc: 'Casual T-shirt',
@@ -72,7 +72,7 @@ const data = [
       price: 50,
     },
     {
-      id: 9,
+      id: 21,
       image: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNDYzMjV8MHwxfHNlYXJjaHw1fHxzaGlydHxlbnwwfHx8fDE2NTc3NzYzMjg&ixlib=rb-1.2.1&q=80&w=1080',
       title: 'Mens dress',
       desc: 'Casual Shirt',
@@ -81,7 +81,7 @@ const data = [
       price: 50,
     },
     {
-      id: 10,
+      id: 22,
       image: 'https://images.bewakoof.com/t640/men-s-men-s-color-block-bomber-jacket-437144-1656181888-1.jpg',
       title: 'Mens dress',
       desc: 'Jacket',
@@ -90,7 +90,7 @@ const data = [
       price: 50,
     },
     {
-      id: 11,
+      id: 23,
       image: 'https://images.bewakoof.com/t640/men-s-blue-joggers-451590-1656144949-1.jpg',
       title: 'Mens dress',
       desc: 'Jogger',
@@ -99,7 +99,7 @@ const data = [
       price: 50,
     },
     {
-      id: 12,
+      id: 24,
       image: 'https://images.unsplash.com/photo-1602293589930-45aad59ba3ab?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNDYzMjV8MHwxfHNlYXJjaHw1fHxkZW5pbXxlbnwwfHx8fDE2NTc3NzcwNDM&ixlib=rb-1.2.1&q=80',
       title: 'Mens dress',
       desc: 'Denim Jeans',

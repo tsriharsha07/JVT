@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import data from "./data/Mens";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import {Link} from 'react-router-dom'
+
+import { useDispatch } from "react-redux";
+import { addCart } from "./redux/actions";
 //import ShoppingCart from '@mui/icons-material/ShoppingCart';
 
 
 const Men = () => {
   // eslint-disable-next-line
   const [items, setItems] = useState(data);
-  const [cart, setCart] = useState([]);
-  //const item={data};
-  const addToCart = (item) => {
-    setCart([...cart, item]);
-    console.log("Added to cart");
-    console.log(data.id);
-  };
+  const dispatch=useDispatch();
+
+  const addToCart=(product)=>{
+    dispatch(addCart(product));
+  }
 
   return (
     <>
@@ -35,11 +35,11 @@ const Men = () => {
                   <p>{desc}</p>
                   <p className="lead fw-bold card-text">{price}</p>
                   <FavoriteIcon className="m-2"/>
-                  <Link to='/cart'>
-                    <button type="button" className="btn btn-primary" onClick={addToCart}>
+                  
+                    <button type="button" className="btn btn-primary" onClick={()=>addToCart(item)}>
                     Buy Now
                   </button>
-                  </Link>
+                  
                 
                 </div>
                 
