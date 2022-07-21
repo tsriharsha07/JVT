@@ -3,6 +3,7 @@ import {useSelector} from 'react-redux'
 //import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import { useDispatch } from 'react-redux';
+import { Card } from '@mui/material';
 import { addCart, delCart } from './redux/actions';
 
 function Cart() {
@@ -52,7 +53,11 @@ function Cart() {
             </>
           )
         })}
-        <h3>Cart Price :{total} </h3>
+        <div className='container m-auto p-auto'>
+        <Card>
+        <h3>Total Price :{total} </h3>
+        </Card>
+        </div>
         <div className='container'>
         <button className='my-3 btn btn-outline-primary opacity-10'>Order Now</button>
         </div>
