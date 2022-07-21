@@ -26,9 +26,9 @@ const Women = () => {
           return (
             <div className="col-md-4 mb-3" key={id}>
               <div className="h-100 text-center p-4 card">
-                
-                <img className="card-img-top img-fluid d1" src={image}   alt="Womens pic" />
-                
+                <div>
+                <img className="card-img-top img-thumbnail d1" src={image}   alt="Womens pic" />
+                </div>
                 <div className="card-body">
                   <div className="mb-0 card-title h5">{title}</div>
                   <p>{desc}</p>
