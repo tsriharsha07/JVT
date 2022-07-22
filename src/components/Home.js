@@ -7,7 +7,6 @@ import b10 from "./images//b10.jpg"
 import f5 from "./images//f5.jpg"
 import f4 from "./images//f4.jpg"
 import b4 from "./images//b4.jpg"
-
 import b2 from "./images//b2.jpg"
 import b17 from "./images//b17.jpg"
 import b7 from "./images//b7.jpeg"

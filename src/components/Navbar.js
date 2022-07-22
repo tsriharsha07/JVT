@@ -16,10 +16,9 @@ const Navbar = () => {
     <>
     <nav className="navbar navbar-expand-lg navbar-white bg-success bg-opacity-25">
         
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-        </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mk h5 text-white">
@@ -49,7 +48,6 @@ const Navbar = () => {
                 <Link to='/login'><button className='btn btn-outline-warning m-2'>Login</button></Link>
                 <Link to='/signup'><button className='btn btn-outline-warning m-2'>SignUp</button></Link>
                 <Link to='/cart'><button className='btn btn-outline-warning m-2'><Badge><ShoppingCartIcon/>{state.length}</Badge></button></Link>
-                
             </div>
         </div>
     </nav>
