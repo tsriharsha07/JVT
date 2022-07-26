@@ -29,13 +29,13 @@ const Navbar = () => {
                 <Link to='/men' className='text-decoration-none'><p className="nav-link text-white">Men</p></Link>
                 </li>
                 <li className="nav-item">
-                <Link to='/women' className='text-decoration-none'><p className="nav-link px-2 text-white">Women</p></Link>
+                <Link to='/women' className='text-decoration-none'><p className="nav-link text-white">Women</p></Link>
                 </li>
 		        {/*    <li className="nav-item">
                     <Link to='/kids'><p className="nav-link px-2 text-white">Kids</p></Link>
                 </li> */}
                 <li className="nav-item">
-                <Link to='/footwear' className='text-decoration-none'><p className="nav-link px-2 text-white ">Footwear</p></Link>
+                <Link to='/footwear' className='text-decoration-none'><p className="nav-link text-white ">Footwear</p></Link>
                 </li>
 
 
