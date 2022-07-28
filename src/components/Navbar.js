@@ -11,12 +11,11 @@ import { Badge } from '@mui/material';
 
 
 
-
 const Navbar = () => {
   const state = useSelector((state) => state.handleCart)
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-white bg">
+      <nav className="navbar navbar-expand-lg navbar-white bg-dark">
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -33,7 +32,7 @@ const Navbar = () => {
             <li className="nav-item">
               <Link to='/women' className='text-decoration-none'><p className="nav-link text-white">Women</p></Link>
             </li>
-            
+
             <li className="nav-item">
               <Link to='/footwear' className='text-decoration-none'><p className="nav-link text-white ">Footwear</p></Link>
             </li>
@@ -47,6 +46,8 @@ const Navbar = () => {
           <div className="mx-2 d-flex flex-row">
             <Link to='/login'><button className='btn btn-outline-warning m-2'>Login</button></Link>
             <Link to='/signup'><button className='btn btn-outline-warning m-2'>SignUp</button></Link>
+            
+            
             <Link to='/cart'><button className='btn btn-outline-warning m-2'><Badge><ShoppingCartIcon />{state.length}</Badge></button></Link>
 
           </div>
