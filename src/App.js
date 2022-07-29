@@ -11,7 +11,7 @@ import Login from "./components/Login";
 import Home from "./components/Home";
 import Signup from "./components/Signup";
 import Footwear from './components/Footwear'
-
+import Products from "./components/Products";
 import Women from "./components/Women";
 import Men from "./components/Men";
 import Cart from "./components/Cart";
@@ -35,7 +35,7 @@ function App() {
         <Route path="signup" element={<Signup/>} />
         <Route path="men" element={<Men />} />
         <Route path="women" element={<Women/>} />
-        
+        <Route path='/Shop/:id' element={<Products/>}/>
         <Route path="footwear" element={<Footwear/>} />
         <Route path="cart" element={<Cart/>}/>
         

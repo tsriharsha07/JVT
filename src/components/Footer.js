@@ -9,6 +9,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 const Footer = () => {
   return (
   <>
+  <div>
   <div className="container mb-1">
     <footer className="py-3 my-4">
     <ul className="nav justify-content-center border-bottom pb-3 mb-3">
@@ -30,6 +31,7 @@ const Footer = () => {
      </ul>
      </div>  
   </footer>
+  </div>
   </div>
   </>
   )

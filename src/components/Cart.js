@@ -31,8 +31,8 @@ function Cart() {
                 <div/>
                 <div className="card-body">
                   <div className="mb-0 card-title h5">{product.title}</div>
-                  <p>{product.desc}</p>
-                  <p className="lead fw-bold card-text">{product.price}</p>
+                  
+                  <p className="lead fw-bold card-text">${product.price}</p>
                   
                   
                   <ButtonGroup aria-label="Basic example">
